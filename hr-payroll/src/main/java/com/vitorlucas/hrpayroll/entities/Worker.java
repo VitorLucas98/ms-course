@@ -42,6 +42,12 @@ public class Worker implements Serializable{
 	public void setDailyIncome(Double dailyIncome) {
 		this.dailyIncome = dailyIncome;
 	}
+	
+
+	@Override
+	public String toString() {
+		return "Worker [id=" + id + ", name=" + name + ", dailyIncome=" + dailyIncome + "]";
+	}
 
 	@Override
 	public int hashCode() {
